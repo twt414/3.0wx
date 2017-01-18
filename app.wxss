@@ -8,6 +8,8 @@
 view{
   box-sizing: border-box;
 }
+
+
 .footer {
 font-size: 26rpx;
 color: #999;
