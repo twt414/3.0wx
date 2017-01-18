@@ -1,0 +1,31 @@
+/* pages/recordList/list.wxss */
+.list{
+    background-color: #fff;
+    display: flex;
+    justify-content:space-around;
+    border-top:solid 2px #f1f1f1;
+}
+.list li{
+    width: 30%;
+    text-align: center;
+    font-size: 24rpx;
+    line-height: 80rpx;
+    color: #666;
+}
+.list li.first{
+    text-align: left;    
+}
+.recordnav ul{
+    background-color: #fff;
+    margin: 20rpx 0;
+    display: flex;
+    justify-content:space-around;
+}
+.recordnav li{
+    width: 33%;
+    text-align: center;
+    line-height: 84rpx;
+    font-size: 28rpx;
+    color: #333;
+    font-weight:400
+}   

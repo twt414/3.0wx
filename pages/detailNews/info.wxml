@@ -1,0 +1,15 @@
+<!--pages/detail-info/info.wxml-->
+<import src="../wxParse/wxParse.wxml"/>
+<block wx:if="{{type == '0'}}"> 
+    <view><template is="wxParse" data="{{wxParseData:article.nodes}}"/></view>
+</block>        
+<block wx:else="{{type == '1'}}">
+    <view class="cont">
+        <label class="title">借款用途</label>
+        <view>{{data.borrowUse}}</view>
+    </view>
+    <view class="cont">
+        <label class="title">借款描述</label>
+        <view><template is="wxParse" data="{{wxParseData:article.nodes}}"/></view>
+    </view>    
+</block>

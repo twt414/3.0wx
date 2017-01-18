@@ -1,0 +1,36 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/detail/itemDetail",
+    "pages/itemList/index",
+    "pages/detailNews/info",
+    "pages/recordList/list",    
+    "pages/bindAccount/index"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fa6739",
+    "navigationBarTitleText": "融都互金",
+    "navigationBarTextStyle":"#fff",
+    "backgroundColor": "#f1f1f1"
+  },
+    "tabBar": {
+    "backgroundColor":"#fff",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页"
+    }, {
+      "pagePath": "pages/itemList/index",
+      "text": "项目列表"
+    }
+    , {
+      "pagePath": "pages/bindAccount/index",
+      "text": "账号绑定"
+    }]
+  },
+   "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}

@@ -1,0 +1,24 @@
+<view class="container">
+<view class="title">
+    账号绑定
+</view>
+<form bindsubmit="formSubmit">
+<view class="section">
+    <input class="formControl" bindblur="phoneCodeCheck" style="width:100%" name="iphoneNumber" placeholder="请输入手机号码" focus="true"/>
+</view>
+<view wx:if="{{errorMessage.phoneCodeError!=''}}" class="errorMsg">
+{{errorMessage.phoneCodeError}}
+</view>
+<view class="section">
+    <input class="formControl" name="code" bindblur="CodeCheck" style="width:250rpx;"  placeholder="请输入验证码" />
+    <button bindtap="sendcode" style="margin-right:0" disabled='{{disabled}}' >{{codeMsg}}</button>
+</view>
+<view wx:if="{{errorMessage.codeError!=''}}" class="errorMsg">
+{{errorMessage.codeError}}
+</view>
+<view  class="section">
+    <button type="primary" form-type="submit" style="width:100%" bindtap="setLoading">提交</button>
+</view>
+</form>
+</view>
+

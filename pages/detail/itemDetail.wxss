@@ -1,0 +1,119 @@
+/* pages/detail/itemDetail.wxss */
+.detail-header{
+    display: flex;
+    flex-flow:row nowrap;
+    position: relative;
+    height: 280rpx;
+    border-bottom:solid 2px #f0f0f0;
+    background-color: #fff;
+}
+.detail-header-title{
+    position: absolute;
+    width:100%;
+    font-size:30rpx;
+    padding:0 0 0 48rpx;
+    box-sizing: border-box;
+    top:0;
+    left: 0;
+    color: #6d6d6d;
+    line-height: 74rpx;
+}
+.detail-header-rate{
+    font-size: 96rpx;
+    width:100%;
+    text-align: center;
+    padding: 92rpx 0 0 0;
+    color: #d0404b;
+}
+.detail-header-rate span{
+    font-size: 60rpx;
+}
+.detail-header-tab{
+    background-color: #fff;
+    display: flex;
+    justify-content:space-around;
+}
+.detail-header-tab li{
+    width: 30%;
+    text-align: center;
+    position: relative;
+    line-height: 88rpx;
+    font-size: 32rpx;
+    color: #666;
+}
+.detail-header-tab li:after{
+    position: absolute;
+    content: " ";
+    display: block;
+    width: 2rpx;
+    height: 58rpx;
+    font-size: 0;
+    top:16rpx;
+    right: 0;
+    background-color: #f1f1f1;
+}
+.detail-header-tab li.last:after{
+    display: none;
+}
+.detail-speed{
+    color: #666;
+    margin: 22rpx 0 0 0;
+    height: 212rpx;
+    background-color: #fff;
+    padding: 50rpx 40rpx 0;  
+}
+.detail-speed ul{
+    display: flex;
+    justify-content:space-around; 
+}
+.detail-speed ul li{
+    width: 50%;
+    text-align: left;
+    line-height: 96rpx;
+    font-size: 32rpx;   
+}
+.detail-info{
+    margin: 22rpx 0 0 0;
+    overflow: hidden;
+    border-bottom:solid 2px #f0f0f0;
+    background-color: #fff;   
+}
+.detail-info ul{
+    display: block;
+    overflow: hidden;
+    margin:0 0 0 34rpx;
+    color: #141414;
+}
+.detail-info ul li{
+    display: block;
+    box-sizing: border-box;
+    border-bottom:solid 1px #c6c6c6;
+    line-height: 100rpx;
+    font-size: 32rpx;
+    font-weight: 200;
+    padding:0 64rpx 0 0;
+}
+.detail-info ul li span{
+    float: right;
+    font-weight: bold;
+}
+.detail-info ul li.last{
+    border:none;
+}
+.detail-sub{
+    margin: 20rpx 35rpx 0;
+    line-height: 110rpx;
+    border-radius: 10rpx;
+    text-align: center;
+    font-weight: bold;
+    background-color: #d44642;
+    color: #fefefe;
+    font-size:42rpx;
+}
+.countdown{
+    font-size: 32rpx;
+    line-height: 74rpx;
+    text-align: center;
+    font-weight: 300;
+    color: #686868;
+}

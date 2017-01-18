@@ -1,0 +1,22 @@
+<template name="msgItem">
+  <navigator url="../detail/itemDetail?projectId={{id}}" >
+    <view class="title">
+    <view class="title-detail">{{projectTypeName}}</view>
+    <view class="money">金额 {{account}}元</view>
+    </view>
+    <view class="item-detail">
+    <view class="apr">
+    <view class="text-number">{{apr}}<span>%</span></view>
+    <view class="text-info">年化收益</view></view>
+    <view class="time">
+     <view class="text-number" wx:if="{{timeType ==0}}"> {{timeLimit}}<span>个月</span> </view>
+     <view class="text-number" wx:else> {{timeLimit}}<span>天</span> </view>
+     <view class="text-info">产品期限</view>
+    </view>
+    <view class="low-money">
+    <view class="text-number"> {{lowestAccount}}<span>元</span></view>
+    <view class="text-info">起投金额</view>
+    </view> 
+    </view>
+   </navigator>
+</template>

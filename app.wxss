@@ -1,0 +1,20 @@
+/**app.wxss**/
+.container {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+view{
+  box-sizing: border-box;
+}
+.footer {
+font-size: 26rpx;
+color: #999;
+padding:10rpx 0 20rpx;
+text-align: center;
+}
+page {
+  height: 100%;
+  background-color: #f1f1f1;
+}

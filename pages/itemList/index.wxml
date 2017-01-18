@@ -1,0 +1,15 @@
+<view class="container">
+    <view class="item-type" id="itemType">
+        <view wx:for="{{typeData}}" class="{{item.iscur}}" data-index="{{index}}" data-id="{{item.id}}" bindtap="changeType">
+            {{item.typeName}}
+        </view>
+    </view>
+    <view class="item">
+    <scroll-view scroll-y="true" scroll-top="{{scrollTop}}" bindscrolltolower="bottomRefresh" style="height:{{windowHeight}}px" >
+       <view wx:for="{{listData}}" hover='true' class="list-item">
+        <import src="../common/template.wxml"/>
+        <template is="msgItem" data="{{...item}}"/>
+      </view>
+    </scroll-view>
+    </view>
+</view>

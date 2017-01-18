@@ -1,0 +1,29 @@
+<view class="detail-header">
+    <div class="detail-header-title">预期年化</div>
+    <div class="detail-header-rate">{{itemDetail.project.apr}}<span>%</span></div>
+</view>
+<view class="container" bindtap="tapName">
+    <ul class="detail-header-tab">
+        <li>{{itemDetail.project.lowestAccount}}元起投</li>
+        <li>{{itemDetail.project.timeLimit}}{{itemDetail.project.timeType == "1" ? "天" : "个月"}}</li>
+        <li class="last" >{{["等额本息", "一次性还款", "每月还息到期还本", "等额本金", "每季还息到期还本"][itemDetail.project.repayStyle-1]}}</li>
+    </ul>
+</view>
+<view class="detail-speed">
+    <progress percent="{{percent}}" active="true" color="#e34b4b" show-info />
+    <ul>
+        <li>融资金额<span>{{itemDetail.project.account}}</span>元</li>
+        <li>完成金额<span>{{itemDetail.project.accountYes}}</span>元</li>
+    </ul>
+</view>
+<view class="detail-info">
+    <ul>
+        <li>风控措施<span>></span></li>
+        <li><navigator url="../recordList/list?projectId={{id}}" >投标记录<span>></span></navigator></li>
+        <li class="last"><navigator url="../detailNews/info?projectId={{id}}&type={{itemDetail.project.borrowFlag}}" ><block wx:if="{{itemDetail.project.borrowFlag == '0'}}">产品详情</block><block wx:else="{{itemDetail.project.borrowFlag == '1'}}">借款详情</block><span>></span></navigator></li>
+    </ul>
+</view>
+<view class="detail-sub">立即投资</view>
+<block wx:if="{{(itemDetail.project.saleEndTime - itemDetail.systemTime) > 0}}">
+    <view class="countdown">结束时间:{{showTime}}</view>
+</block>

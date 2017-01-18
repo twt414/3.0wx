@@ -1,0 +1,17 @@
+<!--index.wxml-->
+<view class="container">
+ <swiper indicator-dots="true" autoplay="true" interval="2000" duration="500">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" style="width:100%" />
+    </swiper-item>
+  </block>
+</swiper>
+<view class="item">
+  <view wx:for="{{listData}}" hover='true' class="list-item">
+  <import src="../common/template.wxml"/>
+  <template is="msgItem" data="{{...item}}"/>
+  </view>
+</view>
+<include src="../common/footer.wxml"/>
+</view>

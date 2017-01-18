@@ -1,0 +1,36 @@
+/* pages/itemList/index.wxss */
+@import "../common/itemList.wxss";
+page{
+    overflow: hidden;
+}
+.type-choose {
+    background: #fff;
+}
+.item-type {
+    display: flex;
+    justify-content:flex-start;
+    flex-wrap: wrap;
+    top: 0;
+    padding-top: 8rpx;
+    background: #f1f1f1;
+    z-index: 999;
+    height: 68rpx;
+    overflow-y: auto;
+}
+.item {
+ 
+}
+.item-type view{
+    margin: 10rpx 10rpx;
+    font-size: 30rpx;
+    padding: 2rpx 6rpx;
+    border: 1rpx solid #f95b29;
+    color: #fff;
+    background: #f95b29;
+    border-radius: 6rpx;
+   
+}
+.item-type .type-choose {
+    background: #fff;
+    color:#f95b29;
+}

@@ -1,0 +1,7 @@
+<template name="msgItem">
+    <ul class="list">
+        <li class="first">{{userName}}</li>
+        <li>{{amount}}</li>
+        <li>{{createTime}}</li>
+    </ul>
+</template>

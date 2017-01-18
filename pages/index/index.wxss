@@ -1,0 +1,5 @@
+/**index.wxss**/
+@import "../common/itemList.wxss";
+swiper{
+  width: 100%;
+}

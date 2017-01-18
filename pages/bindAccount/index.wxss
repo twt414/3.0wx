@@ -1,0 +1,23 @@
+/* pages/bindAccount/index.wxss */
+input {
+  border:1px solid rgba(0, 0, 0, 0.2);
+  background: #fff;  
+  border-radius: 8rpx;
+  height: 46px;
+}
+.container {
+    padding: 80rpx 60rpx;
+}
+.formControl {
+    padding: 0 10rpx;
+}
+.section {
+    display: flex;
+    justify-content:space-between;
+    margin-top: 50rpx;
+}
+.errorMsg {
+    color: orangered;
+    font-size: 34rpx;
+    padding-top: 5rpx;
+}
