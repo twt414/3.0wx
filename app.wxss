@@ -12,7 +12,6 @@ view{
 
 .footer {
 font-size: 26rpx;
-
 color: #999;
 padding:10rpx 0 20rpx;
 text-align: center;
